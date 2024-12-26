@@ -16,8 +16,6 @@ def set_random_seed(seed: int) -> None:
 	torch.backends.cudnn.deterministic = True
 
 
-# seed = 454523  auc: 0.839844, accuracy: 0.768629,rmse: 0.395355,r2: 0.333623
-# seed = 2451521  auc: 0.840092, accuracy: 0.769173,rmse: 0.395511,r2: 0.333097  epoch=25,
 seed = 545194
 set_random_seed(seed)
 

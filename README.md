@@ -23,7 +23,7 @@ The code is the implementation of DEKT model, and the data set is the public dat
 
 First, download the data file:  [**ASSISTments Challenge**]([The 2017 ASSISTments Datamining Competition - Dataset](https://sites.google.com/view/assistmentsdatamining/dataset)), then put it in the folder 'data/'.
 
-Then, preprocess the emotional attributes: run dataprocess/preone.py, pretwo.py and prethree.py to preprocess the emotional attributes, and run datapre.py to divide the original data set into train set, validation set and test set.
+Then, preprocess the emotional attributes: run dataprocess/preone.py, pretwo.py and prethree.py to preprocess the emotional attributes, and run datapre.py to divide the original dataset into train set, validation set and test set.
 
 `/dataprocess/`
 
@@ -48,7 +48,7 @@ A detailed description of the emotional attributes can be found in this article:
 
 
 
-Modify the hyperparameters in the main file, then run the main.py to train and test the model with one command.
+Modify the hyperparameters in the main file, then run the main.py to `train` and `test` the model with one command.
 
 ```pythin
 python main.py

@@ -193,14 +193,8 @@ def train_one_epoch(net, optimizer, criterion, criterion_mse,criterion_cr,batch_
 
         loss2 = loss21+loss22+loss23+loss24
 
-        loss = loss1 + 20*loss2
-        # 0.1  auc: 0.838198, accuracy: 0.767201,rmse: 0.397254,r2: 0.327207
-        # 0.5  auc: 0.839944, accuracy: 0.768986,rmse: 0.396121,r2: 0.331040
-        # 1.5  auc: 0.840640, accuracy: 0.769507,rmse: 0.395222,r2: 0.334073
-        # 2.0  auc: 0.840902, accuracy: 0.769501,rmse: 0.395317,r2: 0.333753
-        # 10   auc: 0.840541, accuracy: 0.769676,rmse: 0.395291,r2: 0.333838
-        # 20   auc: 0.839223, accuracy: 0.767909,rmse: 0.395844,r2: 0.331975
-        # 50   auc: 0.837054, accuracy: 0.765902,rmse: 0.397381,r2: 0.326776
+        loss = loss1 + 2*loss2
+        
         loss.backward()
         optimizer.step()
 
